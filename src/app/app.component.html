@@ -1,0 +1,21 @@
+
+
+<!-- <app-bubble-chart></app-bubble-chart>
+<app-gauge-chart></app-gauge-chart>
+<app-heat-map-chart></app-heat-map-chart>
+<app-bar-chart></app-bar-chart> -->
+
+<form>
+  <!-- <h4>mat-select</h4> -->
+  <mat-form-field appearance="fill" style="width:300px;">
+    <mat-label>Select Chart</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="food" >
+      <mat-option *ngFor="let chart of charts" [value]="chart.value" [routerLink]="chart.link">
+        {{chart.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <!-- <p> Selected food: {{selectedValue}} </p> routerLink="/bar"-->
+</form>
+
+<router-outlet></router-outlet>

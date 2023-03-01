@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FlowChart</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+</head>
+<body>
+  
+  <app-root>loading....</app-root>
+
+<div>
+  
+  <div class="container">
+    <p style="padding-right: 10px;"><b>Theme:</b></p>
+    <label class="switch" >
+        
+    <input type="checkbox" id="nbtn">
+    <span class="slider"></span>
+  
+  </label>
+  </div>
+  </div>
+  <script type="text/javascript">
+    const nightButton = document.querySelector("#nbtn");
+  
+ 
+  
+  nightButton.addEventListener("click", () => {
+      document.querySelector("body").classList.toggle("active");
+      nightButton.classList.toggle('active-button');
+  
+  })
+  </script>
+  
+</body>
+</html>
